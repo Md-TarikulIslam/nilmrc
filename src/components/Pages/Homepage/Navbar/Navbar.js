@@ -89,12 +89,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link
-          to=""
+        <a
+          href="https://nilmrc-patient.netlify.app/"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Patients Portal
-        </Link>
+        </a>
       </Typography>
       <GalleryDrop />
       <ResearchDrop />

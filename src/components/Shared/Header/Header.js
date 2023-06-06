@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "../../Pages/Homepage/Carousel/Carousel";
 import { Button } from "@material-tailwind/react";
-import image from "../../../components/assets/images/footer/footer_top_bg.png";
 
 import "./Header.css";
 import Navbar from "../../Pages/Homepage/Navbar/Navbar";
@@ -22,7 +21,6 @@ const Header = () => {
         <Navbar></Navbar>
         <MainGrid></MainGrid>
         <Gallery></Gallery>
-        <img src={image} alt="" />
       </div>
     </div>
   );
