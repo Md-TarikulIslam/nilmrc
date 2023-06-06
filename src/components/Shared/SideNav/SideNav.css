@@ -1,51 +1,7 @@
-.side-card {
-    margin: 20px 0;
-    position: relative;
-    left: 850px;
-
-}
-.designation{
+.designation {
     background-color: rgb(96, 149, 19);
 }
 
 .details-btn {
-    margin-left: 170px;
-}
-
-@media screen and (max-width:640px) {
-.side-card{
-    left: 0;
-}
-.details-btn{
-    margin-left: 260px;
-}
-}
-
-
-@media screen and (min-width:641px) and (max-width:768px) {
-.side-card{
-    left: 0;
-}
-.details-btn{
-    margin-left: 290px;
-}
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-
-.side-card{
-    left: 0;
-}
-.details-btn{
-    margin-left: 290px;
-}
-}
-
-@media screen and (min-width:1025px) and (max-width:1280px) {
-.side-card{
-    /* left: 0; */
-}
-}
-@media screen and (min-width:1281px) and (max-width:1536px) {
-
+    margin-left: 180px;
 }

@@ -7,10 +7,14 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import DeptDrop from "./DeptDrop";
+import ICTDrop from "./ICTDrop";
+import GalleryDrop from "./GalleryDrop";
+import ResearchDrop from "./ResearchDrop";
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 lg:justify-center">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2 lg:justify-center">
       <Typography
         as="li"
         variant="small"
@@ -50,19 +54,7 @@ function NavList() {
           Contact Us
         </Link>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Departments
-        </Link>
-      </Typography>
+      <DeptDrop />
       <Typography
         as="li"
         variant="small"
@@ -89,6 +81,8 @@ function NavList() {
           Webmail
         </Link>
       </Typography>
+
+      <ICTDrop />
       <Typography
         as="li"
         variant="small"
@@ -96,51 +90,14 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          ICT
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          to="#"
+          to=""
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Patients Portal
         </Link>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Gallery
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Research
-        </Link>
-      </Typography>
+      <GalleryDrop />
+      <ResearchDrop />
       <Typography
         as="li"
         variant="small"
@@ -186,7 +143,7 @@ export default function Example() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-6 py-3 lg:relative md:bottom-16">
+    <Navbar className="mx-auto max-w-screen-xl px-6 py-3 ">
       <div className=" text-blue-gray-900">
         <div className="hidden lg:block">
           <NavList />

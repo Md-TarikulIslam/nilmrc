@@ -7,8 +7,8 @@ import "./SideNav.css";
 const SideNav = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-2 xl:grid-cols-1">
-        <div className="side-card w-full md:lg:w-full xl:w-1/5">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-none ml-10 mt-10 md:ml-0 md:mt-0 md:gap-10 lg:ml-10 xl:ml-0">
+        <div className="w-56 mb-16">
           <h1 className="text-xl font-semibold designation p-1 text-white">
             Director
           </h1>
@@ -21,7 +21,7 @@ const SideNav = () => {
           </p>
           <button className="text-xs underline details-btn">Details</button>
         </div>
-        <div className="side-card w-full md:lg:w-full xl:w-1/5">
+        <div className="w-56 mb-16">
           <h1 className="text-xl font-semibold designation p-1 text-white">
             Deputy Director
           </h1>
@@ -34,7 +34,7 @@ const SideNav = () => {
           </p>
           <button className="text-xs underline details-btn">Details</button>
         </div>
-        <div className="side-card w-full md:lg:w-full xl:w-1/5">
+        <div className="w-56">
           <h1 className="text-xl font-semibold designation p-1 text-white">
             Assitant Director
           </h1>

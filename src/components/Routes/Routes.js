@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import Carousel from "../Pages/Homepage/Carousel/Carousel";
 import Main from "../Main";
+import PhotoGallery from "../Pages/GalleryPage/PhotoGallery/PhotoGallery";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children:[{
-        path:'/'
+        path:'/photo-gallery',
+        element:<PhotoGallery></PhotoGallery>
     }]
   },
 ]);
