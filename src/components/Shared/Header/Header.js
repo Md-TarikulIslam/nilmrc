@@ -4,12 +4,10 @@ import { Button } from "@material-tailwind/react";
 
 import "./Header.css";
 import Navbar from "../../Pages/Homepage/Navbar/Navbar";
-import MainGrid from "../../Pages/Homepage/MainGrid";
-import Gallery from "../../Pages/Homepage/Gallery/Gallery";
 
 const Header = () => {
   return (
-    <div className="main-card px-10 max-w-screen-xl mx-auto">
+    <div className=" px-10 mx-auto">
       <div className="flex items-center justify-between bg-purple-700 px-2 py-1">
         <h1 className="text-white">Bangladesh National Portal</h1>
         <Button color="purple" size="sm">
@@ -19,8 +17,6 @@ const Header = () => {
       <div>
         <Carousel></Carousel>
         <Navbar></Navbar>
-        <MainGrid></MainGrid>
-        <Gallery></Gallery>
       </div>
     </div>
   );

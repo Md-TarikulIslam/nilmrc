@@ -1,9 +1,41 @@
+.hero-size{
+    width:820px;
+}
+
 .hero-img{
-    width: 800px;
+    width: 750px;
     height: 580px;
 }
+.msg{
+    width: 750px;
+}
 @media screen and (max-width:640px) {
+    .hero-size{
+        width:390px;
+    }
     .hero-img{
         height: 230px;
     }
+    .msg{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .hero-size{
+        width:770px;
+    }
+    .msg{
+        width: 680px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .hero-size{
+        width:800px;
+    }
+    .msg{
+        width: 720px;
+    }
+
 }

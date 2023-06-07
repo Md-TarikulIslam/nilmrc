@@ -2,12 +2,13 @@ import React from "react";
 import img1 from "../../../components/assets/images/sidenav/Pic_Director.jpg";
 import img2 from "../../../components/assets/images/sidenav/nilmrc-dd.jpg";
 import img3 from "../../../components/assets/images/sidenav/nilmrc-ad.jpg";
+import img4 from "../../../components/assets/images/sidenav/National-Helpline.jpg";
 import "./SideNav.css";
 
 const SideNav = () => {
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-none ml-10 mt-10 md:ml-0 md:mt-0 md:gap-10 lg:ml-10 xl:ml-0">
+    <div className="mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-none ml-20 mt-10 md:ml-0 md:mt-0 md:gap-10 lg:ml-10 xl:ml-10">
         <div className="w-56 mb-16">
           <h1 className="text-xl font-semibold designation p-1 text-white">
             Director
@@ -34,7 +35,7 @@ const SideNav = () => {
           </p>
           <button className="text-xs underline details-btn">Details</button>
         </div>
-        <div className="w-56">
+        <div className="w-56 mb-16">
           <h1 className="text-xl font-semibold designation p-1 text-white">
             Assitant Director
           </h1>
@@ -46,6 +47,12 @@ const SideNav = () => {
             (NILMRC)
           </p>
           <button className="text-xs underline details-btn">Details</button>
+        </div>
+        <div className="w-56">
+        <h1 className="text-xl font-semibold designation p-1 text-white">
+           Emergency Hotline
+          </h1>
+          <img src={img4} alt="" />
         </div>
       </div>
     </div>

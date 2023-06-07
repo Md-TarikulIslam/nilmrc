@@ -5,7 +5,7 @@ import img from "../../../components/assets/images/footer/np-logo-set.png";
 const Footer = () => {
   return (
     <div className="footer-card max-w-screen-xl mx-auto ">
-      <div className="flex flex-col xl:flex-row items-center justify-between lg:px-5 px-0">
+      <div className="flex flex-col xl:flex-row items-center justify-between lg:px-5 px-2">
         <div>
           <ul className="flex gap-10 text-sm ">
             <li className="border-b-2 md:border-b-0 lg:border-r-2 border-gray-500 pr-0 lg:pr-6">

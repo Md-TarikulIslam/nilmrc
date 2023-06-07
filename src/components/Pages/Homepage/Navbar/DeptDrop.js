@@ -57,7 +57,7 @@ export default function DeptDrop() {
       >
         <ul className="col-span-4 flex w-full flex-col">
           {menuItems.map(({ title }) => (
-            <a href="#" key={title}>
+            <a href="#" className="" key={title}>
               <MenuItem>
                 <Typography variant="h6" color="blue-gray" className="">
                   {title}

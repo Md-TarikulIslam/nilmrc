@@ -22,7 +22,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="#"
+          to="/"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Home
@@ -35,7 +35,7 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="#"
+          to="/noc"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           NOC

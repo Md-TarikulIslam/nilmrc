@@ -2,11 +2,12 @@ import React from "react";
 import image from "../../../assets/images/hero/dir_home.jpg";
 import "./Hero.css";
 import { Typography } from "@material-tailwind/react";
+import Gallery from "../Gallery/Gallery";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="hero-position">
+    <div className="hero-size">
+      <div className="hero-position mt-10 px-5 x;:px-0">
         <Typography
           variant="h5"
           className="text-center text-green-500 leading-10"
@@ -35,7 +36,7 @@ const Hero = () => {
         </Typography>
         <Typography
           variant="paragraph"
-          className="text-gray-700 my-3 text-justify"
+          className="text-gray-700 my-3 text-justify msg"
         >
           16 December 1971 is a date very memorable to every Bengali national.
           It is the day when Bangladesh conquer freedom after almost 9 months of
@@ -69,6 +70,7 @@ const Hero = () => {
           <li>Generate income through service provision.</li>
         </ul>
       </div>
+      <Gallery></Gallery>
     </div>
   );
 };

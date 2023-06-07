@@ -50,7 +50,12 @@ const Carousel = () => {
           </div>
         </Swiper>
       </div>
-      <marquee behavior="" direction="" className='text-red-600 text-lg absolute top-96 marq'>
+      <marquee scrollamount="5" behavior="scroll" direction="" className='text-red-600 text-lg marq'>
+        NILMRC has collected users fee on 20-05-2023= 6,23,615/-(Six lac twenty
+        three thousand & six hundred fifteen TK. only). + NILMRC has reported
+        total samples of COVID-19 PCR tests on 31-03-2023= 13,96,346, Positive=
+        1,52,319. Highest new record in Bangladesh on 17-09-2022, Total= 5540,
+        Positive= 947. +{" "}
         NILMRC has collected users fee on 20-05-2023= 6,23,615/-(Six lac twenty
         three thousand & six hundred fifteen TK. only). + NILMRC has reported
         total samples of COVID-19 PCR tests on 31-03-2023= 13,96,346, Positive=
