@@ -53,13 +53,13 @@ export default function DeptDrop() {
       </MenuHandler>
       <MenuList
         {...triggers}
-        className="w-[4-rem] md:w-[20rem] overflow-visible"
+        className="w-[4-rem] md:w-[20rem]  overflow-visible"
       >
         <ul className="col-span-4 flex w-full flex-col">
           {menuItems.map(({ title }) => (
             <a href="#" className="" key={title}>
               <MenuItem>
-                <Typography variant="h6" color="blue-gray" className="">
+                <Typography variant="small" color="blue-gray" className="">
                   {title}
                 </Typography>
               </MenuItem>

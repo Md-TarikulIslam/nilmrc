@@ -51,7 +51,7 @@ export default function GalleryDrop() {
           {menuItems.map(({ title }) => (
             <a href="#" key={title}>
               <MenuItem>
-                <Typography variant="h6" color="blue-gray" className="">
+                <Typography variant="small" color="blue-gray" className="">
                   {title}
                 </Typography>
               </MenuItem>
