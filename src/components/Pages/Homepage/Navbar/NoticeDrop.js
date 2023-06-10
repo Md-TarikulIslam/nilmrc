@@ -7,17 +7,14 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
 
 const menuItems = [
   {
-    title: "Publication",
-    link:'/research'
+    title: "Tender",
   },
-
 ];
 
-export default function ResearchDrop() {
+export default function NoticeDrop() {
   const [openMenu, setOpenMenu] = React.useState(false);
 
   const triggers = {
@@ -33,7 +30,7 @@ export default function ResearchDrop() {
           variant="small"
           className="flex items-center gap-3 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
         >
-        Research
+          Notice
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3.5 w-3.5 transition-transform ${
@@ -44,17 +41,17 @@ export default function ResearchDrop() {
       </MenuHandler>
       <MenuList
         {...triggers}
-        className="w-[4-rem] md:w-[8rem] overflow-visible"
+        className="w-[4-rem] md:w-[8-rem] overflow-visible"
       >
         <ul className="col-span-4 flex w-full flex-col">
-          {menuItems.map(({ title, link }) => (
-            <Link to={link} key={title}>
+          {menuItems.map(({ title }) => (
+            <a href="#" key={title}>
               <MenuItem>
                 <Typography variant="small" color="blue-gray" className="">
                   {title}
                 </Typography>
               </MenuItem>
-            </Link>
+            </a>
           ))}
         </ul>
       </MenuList>

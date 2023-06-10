@@ -4,6 +4,9 @@ import PhotoGallery from "../Pages/GalleryPage/PhotoGallery/PhotoGallery";
 import HomeFlex from "../Pages/Homepage/HomeFlex";
 import NOCFlex from "../Pages/NOCPage/NOCFlex";
 import ContactUsPageFlex from "../Pages/ContactUsPage/ContactUsPageFlex";
+import InvestigationsPricePageFlex from "../Pages/InvestigationsPricePage/InvestigationsPricePageFlex";
+import ICTPageFlex from "../Pages/ICTPage/ICTPageFlex";
+import ResearchPageFlex from "../Pages/ResearchPage/ResearchPageFlex";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUsPageFlex></ContactUsPageFlex>,
+      },
+      {
+        path: "/investigations-price",
+        element: <InvestigationsPricePageFlex></InvestigationsPricePageFlex>,
+      },
+      {
+        path: "/ict",
+        element: <ICTPageFlex></ICTPageFlex>,
+      },
+      {
+        path: "/research",
+        element: <ResearchPageFlex></ResearchPageFlex>,
       },
       {
         path: "/photo-gallery",

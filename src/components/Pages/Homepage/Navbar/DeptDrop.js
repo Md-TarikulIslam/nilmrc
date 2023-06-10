@@ -39,7 +39,7 @@ export default function DeptDrop() {
       <MenuHandler>
         <p
           {...triggers}
-          variant="text"
+          variant="small"
           className="flex items-center gap-3 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
         >
           Departments{" "}

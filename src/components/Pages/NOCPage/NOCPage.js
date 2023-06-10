@@ -1,5 +1,5 @@
 import { Card, Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 const TABLE_HEAD = ["Date", "Name of NOC"];
 
 const TABLE_ROWS = [
@@ -97,7 +97,7 @@ const TABLE_ROWS = [
 export default function NOCPage() {
   return (
     <>
-      <Card className="overflow-scroll h-full w-full xl:w-8/12 mt-10">
+      <Card className="rounded-none h-full w-full xl:w-8/12 mt-10">
         <table className="w-full min-w-min table-auto text-left">
           <thead>
             <tr>
@@ -144,6 +144,7 @@ export default function NOCPage() {
           </tbody>
         </table>
       </Card>
+      <ScrollRestoration />
     </>
   );
 }

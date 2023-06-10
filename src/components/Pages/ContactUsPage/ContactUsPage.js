@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const ContactUsPage = () => {
   return (
@@ -25,6 +25,7 @@ const ContactUsPage = () => {
           <br /> <Link className="text-blue-700" to='/'>Website: www.nilmrc.gov.bd</Link>
         </Typography>
       </Fragment>
+      <ScrollRestoration />
     </div>
   );
 };

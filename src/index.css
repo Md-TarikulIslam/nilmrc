@@ -12,6 +12,10 @@ body {
   background-image: url("./components/assets/images/main/2.gif");
   /* background-repeat: no-repeat; */
   background-size: contain;
+  
+}
+html,body{
+  scroll-behavior: smooth;
 }
 
 code {

@@ -11,6 +11,7 @@ import DeptDrop from "./DeptDrop";
 import ICTDrop from "./ICTDrop";
 import GalleryDrop from "./GalleryDrop";
 import ResearchDrop from "./ResearchDrop";
+import NoticeDrop from "./NoticeDrop";
 
 function NavList() {
   return (
@@ -23,7 +24,7 @@ function NavList() {
       >
         <Link
           to="/"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors  text-black"
         >
           Home
         </Link>
@@ -36,7 +37,7 @@ function NavList() {
       >
         <Link
           to="/noc"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           NOC
         </Link>
@@ -49,7 +50,7 @@ function NavList() {
       >
         <Link
           to="/contact-us"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Contact Us
         </Link>
@@ -62,8 +63,8 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          to="/investigations-price"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Investigations Price
         </Link>
@@ -76,7 +77,7 @@ function NavList() {
       >
         <Link
           to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Webmail
         </Link>
@@ -91,7 +92,7 @@ function NavList() {
       >
         <a
           href="https://nilmrc-patient.netlify.app/"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Patients Portal
         </a>
@@ -106,7 +107,7 @@ function NavList() {
       >
         <Link
           to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Journal
         </Link>
@@ -117,12 +118,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link
-          to="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Notice
-        </Link>
+        <NoticeDrop />
       </Typography>
     </ul>
   );

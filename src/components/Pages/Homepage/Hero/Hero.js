@@ -3,6 +3,7 @@ import image from "../../../assets/images/hero/dir_home.jpg";
 import "./Hero.css";
 import { Typography } from "@material-tailwind/react";
 import Gallery from "../Gallery/Gallery";
+import { ScrollRestoration } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -71,6 +72,7 @@ const Hero = () => {
         </ul>
       </div>
       <Gallery></Gallery>
+      <ScrollRestoration />
     </div>
   );
 };

@@ -7,12 +7,13 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   {
     title: "Assistant Programmer",
+    link: "/ict",
   },
-
 ];
 
 export default function ICTDrop() {
@@ -28,10 +29,10 @@ export default function ICTDrop() {
       <MenuHandler>
         <p
           {...triggers}
-          variant="text"
+          variant="small"
           className="flex items-center gap-3 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
         >
-        ICT
+          ICT
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3.5 w-3.5 transition-transform ${
@@ -45,14 +46,14 @@ export default function ICTDrop() {
         className="w-[4-rem] md:w-[14rem] overflow-visible"
       >
         <ul className="col-span-4 flex w-full flex-col">
-          {menuItems.map(({ title }) => (
-            <a href="#" key={title}>
+          {menuItems.map(({ title, link }) => (
+            <Link to={link} key={title}>
               <MenuItem>
                 <Typography variant="small" color="blue-gray" className="">
                   {title}
                 </Typography>
               </MenuItem>
-            </a>
+            </Link>
           ))}
         </ul>
       </MenuList>
