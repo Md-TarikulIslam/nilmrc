@@ -7,7 +7,7 @@ import Gallery from "../Gallery/Gallery";
 const Hero = () => {
   return (
     <div className="hero-size">
-      <div className="hero-position mt-10 px-5 x;:px-0">
+      <div className="hero-position mt-10 px-5 xl:px-0">
         <Typography
           variant="h5"
           className="text-center text-green-500 leading-10"

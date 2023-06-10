@@ -97,7 +97,7 @@ const TABLE_ROWS = [
 export default function NOCPage() {
   return (
     <>
-      <Card className="overflow-scroll h-full w-full xl:w-8/12">
+      <Card className="overflow-scroll h-full w-full xl:w-8/12 mt-10">
         <table className="w-full min-w-min table-auto text-left">
           <thead>
             <tr>
