@@ -4,7 +4,7 @@ const TABLE_HEAD = ["Date", "Name of NOC"];
 
 const TABLE_ROWS = [
   {
-    date: "April, 2023",
+    month: "April, 2023",
   },
   {
     name: " Dr. Tania Islam Resma",
@@ -12,7 +12,7 @@ const TABLE_ROWS = [
     date: "25-04-2023",
   },
   {
-    date: "March, 2023",
+    month: "March, 2023",
   },
   {
     name: "Dr. Abu Ahammad Al Mamun",
@@ -20,7 +20,7 @@ const TABLE_ROWS = [
     date: "09-03-2023",
   },
   {
-    date: "February, 2023",
+    month: "February, 2023",
   },
   {
     name: "Md. Anamul Haque",
@@ -28,7 +28,7 @@ const TABLE_ROWS = [
     date: "27-02-2023",
   },
   {
-    date: "December, 2022",
+    month: "December, 2022",
   },
   {
     name: "Md. Jahangir Alam Salim",
@@ -36,7 +36,7 @@ const TABLE_ROWS = [
     date: "01-12-2022",
   },
   {
-    date: "September, 2022",
+    month: "September, 2022",
   },
   {
     name: "Muhammed Mahbub Hasan",
@@ -45,7 +45,7 @@ const TABLE_ROWS = [
   },
 
   {
-    date: "July, 2022",
+    month: "July, 2022",
   },
   {
     name: "Dr. Mohammad Shahed Ali",
@@ -58,7 +58,7 @@ const TABLE_ROWS = [
     date: "21-04-2022",
   },
   {
-    date: "January, 2022",
+    month: "January, 2022",
   },
   {
     name: "Dr. Arifa Akram",
@@ -77,7 +77,7 @@ const TABLE_ROWS = [
     date: "05-01-2022",
   },
   {
-    date: "September, 2021",
+    month: "September, 2021",
   },
   {
     name: "Dr. Mohammad Abdullah Az Zubayer Khan",
@@ -85,7 +85,7 @@ const TABLE_ROWS = [
     date: "18-09-2021",
   },
   {
-    date: "February, 2020",
+    month: "February, 2020",
   },
   {
     name: "Md. Jahangir Alam and Prokash Chondro Mondol",
@@ -118,9 +118,16 @@ export default function NOCPage() {
             </tr>
           </thead>
           <tbody>
-            {TABLE_ROWS.map(({ name, link, date }, index) => (
+            {TABLE_ROWS.map(({ name, link, date, month }, index) => (
               <tr key={name} className="even:bg-blue-gray-50/50 ">
                 <td className="p-4">
+                <Typography
+                    variant="paragraph"
+                    color="blue-gray"
+                    className="font-normal text-blue-700"
+                  >
+                    {month}
+                  </Typography>
                   <Typography
                     variant="small"
                     color="blue-gray"
@@ -134,7 +141,7 @@ export default function NOCPage() {
                     to={link}
                     variant="small"
                     color="blue-gray"
-                    className="font-bold underline underline-offset-4"
+                    className="font-bold hover:underline hover:underline-offset-4"
                   >
                     {name}
                   </Link>

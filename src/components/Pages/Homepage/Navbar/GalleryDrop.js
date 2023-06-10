@@ -32,11 +32,11 @@ export default function GalleryDrop() {
         <p
           {...triggers}
           variant="text"
-          className="flex items-center gap-3 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
+          className="flex items-center gap-1 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
         >
         Gallery
           <ChevronDownIcon
-            strokeWidth={2.5}
+            strokeWidth={1.5}
             className={`h-3.5 w-3.5 transition-transform ${
               openMenu ? "rotate-180" : ""
             }`}

@@ -15,10 +15,10 @@ import NoticeDrop from "./NoticeDrop";
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2 lg:justify-center">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-0 lg:justify-center">
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -31,7 +31,7 @@ function NavList() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -44,7 +44,7 @@ function NavList() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -55,10 +55,17 @@ function NavList() {
           Contact Us
         </Link>
       </Typography>
-      <DeptDrop />
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <DeptDrop />
+      </Typography>
+      <Typography
+        as="li"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -71,7 +78,7 @@ function NavList() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -82,11 +89,18 @@ function NavList() {
           Webmail
         </Link>
       </Typography>
-
-      <ICTDrop />
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <ICTDrop />
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
@@ -97,16 +111,31 @@ function NavList() {
           Patients Portal
         </a>
       </Typography>
-      <GalleryDrop />
-      <ResearchDrop />
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <GalleryDrop />
+      </Typography>
+      <Typography
+        as="li"
+        variant="paragraph"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <ResearchDrop />
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >
         <Link
-          to="#"
+          to="/journal"
           className="flex items-center hover:text-blue-500 transition-colors text-black"
         >
           Journal
@@ -114,7 +143,7 @@ function NavList() {
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="paragraph"
         color="blue-gray"
         className="p-1 font-medium"
       >

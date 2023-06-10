@@ -1,5 +1,5 @@
 import { Card, Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const TABLE_ROWS = [
   {
@@ -39,7 +39,7 @@ export default function ResearchPage() {
               },
               index
             ) => (
-              <tr key={name} className="even:bg-blue-gray-50/50 hover:odd:bg-blue-gray-50/50 ">
+              <tr key={name} className="even:bg-blue-gray-50/50">
                 <td className="p-4">
                   <Typography
                     variant="small"
@@ -79,6 +79,7 @@ export default function ResearchPage() {
           )}
         </tbody>
       </table>
+      <ScrollRestoration />
     </Card>
   );
 }
