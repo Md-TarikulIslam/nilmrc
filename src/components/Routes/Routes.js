@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main";
 import PhotoGallery from "../Pages/GalleryPage/PhotoGallery/PhotoGallery";
-import NOCPage from "../Pages/NOCPage/NOCPage";
-import MainGrid from "../Pages/Homepage/MainGrid";
+import HomeFlex from "../Pages/Homepage/HomeFlex";
+import NOCFlex from "../Pages/NOCPage/NOCFlex";
 
 const router = createBrowserRouter([
   {
@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <MainGrid></MainGrid>,
+        element: <HomeFlex></HomeFlex>,
       },
       {
         path: "/noc",
-        element: <NOCPage></NOCPage>,
+        element: <NOCFlex></NOCFlex>,
       },
       {
         path: "/photo-gallery",

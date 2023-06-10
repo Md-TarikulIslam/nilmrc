@@ -1,13 +1,13 @@
 import React from 'react';
-import Hero from './Hero/Hero';
-import SideNav from '../../Shared/SideNav/SideNav';
 import img from '../../../components/assets/images/footer/footer_top_bg.png'
+import NOCPage from './NOCPage';
+import SideNav from '../../Shared/SideNav/SideNav';
 
-const MainGrid = () => {
+const NOCFlex = () => {
     return (
         <div>
             <div className='flex flex-col xl:flex-row mt-16 justify-center'>
-                <Hero />
+                <NOCPage />
                 <SideNav />
             </div>
             {/* <Gallery /> */}
@@ -16,4 +16,4 @@ const MainGrid = () => {
     );
 };
 
-export default MainGrid;
+export default NOCFlex;
