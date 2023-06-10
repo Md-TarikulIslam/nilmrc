@@ -32,7 +32,7 @@ export default function GalleryDrop() {
         <p
           {...triggers}
           variant="text"
-          className="flex items-center gap-1 text-base text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
+          className="flex items-center gap-1 text-base text-black font-normal capitalize tracking-normal"
         >
         Gallery
           <ChevronDownIcon

@@ -30,8 +30,8 @@ export default function ResearchDrop() {
       <MenuHandler>
         <p
           {...triggers}
-          variant="small"
-          className="flex items-center gap-1  text-black font-normal capitalize tracking-normal ml-1 lg:ml-0"
+          variant="paragraph"
+          className="flex items-center gap-1  text-black font-normal capitalize tracking-normal"
         >
         Research
           <ChevronDownIcon
