@@ -7,7 +7,7 @@ import './Gallery.css'
 const Gallery = () => {
   return (
     <div className="mt-16 text-center font-bold text-red-500 text-2xl">
-      <h1>Some Memorable Moments</h1>
+      <h1 className="mb-8">Some Memorable Moments</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-5">
         {fakeData.map((image) => (
           <img key={image.id}
