@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../assets/images/hero/dir_home.jpg";
+import image from "../../../assets/images/hero/main.webp";
 import "./Hero.css";
 import { Typography } from "@material-tailwind/react";
 import Gallery from "../Gallery/Gallery";

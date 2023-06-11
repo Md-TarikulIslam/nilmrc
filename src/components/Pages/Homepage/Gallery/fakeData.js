@@ -1,7 +1,7 @@
-import img1 from "../../../assets/images/gallery/1.jpg";
-import img2 from "../../../assets/images/gallery/2.jpg";
-import img3 from "../../../assets/images/gallery/3.jpg";
-import img4 from "../../../assets/images/gallery/4.jpg";
+import img1 from "../../../assets/images/gallery/1.webp";
+import img2 from "../../../assets/images/gallery/2.webp";
+import img3 from "../../../assets/images/gallery/3.webp";
+import img4 from "../../../assets/images/gallery/4.webp";
 const fakeDaata = [
   {
     id: 1,
