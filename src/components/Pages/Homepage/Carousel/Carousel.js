@@ -42,7 +42,7 @@ const Carousel = () => {
               </SwiperSlide>
             ))}
           </div>
-          <div className="flex items-center relative bottom-20 md:bottom-48 z-10 ml-0 md:ml-10">
+          <div className="flex items-center relative bottom-20 md:bottom-56 z-10 ml-0 md:ml-10">
             <img src={logo} alt="" />
             <p className="text-white text-sm md:text-3xl font-bold ml-5 text-shadow">
               National Institute of Laboratory <br /> Medicine & Referral Centre
