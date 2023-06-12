@@ -7,7 +7,7 @@
 .marq{
     position: absolute;
     top: 480px;
-    width: 1050px;
+    width: 1060px;
 }
 
 @media screen and (max-width:640px) {
