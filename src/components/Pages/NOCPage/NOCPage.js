@@ -141,7 +141,7 @@ export default function NOCPage() {
                     to={link}
                     variant="small"
                     color="blue-gray"
-                    className="font-bold hover:underline hover:underline-offset-4"
+                    className="font-bold hover:underline hover:underline-offset-4 hover:text-red-600"
                   >
                     {name}
                   </Link>
