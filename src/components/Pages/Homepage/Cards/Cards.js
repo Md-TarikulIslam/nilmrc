@@ -19,8 +19,8 @@ const Cards = () => {
             </Typography>
             <Typography className="hover:underline flex items-center gap-2">
               <FcNext />
-              সরকারি স্বাস্থ্য ব্যবস্থাপনা -১ঃ ১৮৪(পবিত্র ঈদ-উল-আযহা,২০২৩
-              উদ্‌যাপন উপলক্ষ্যে দেশের সকল ...)
+              সরকারি স্বাস্থ্য ব্যবস্থাপনা -১ঃ ১৮৪(পবিত্র ঈদ-উল-আযহা,২০২৩...
+              )
             </Typography>
             <Typography className="hover:underline flex items-center gap-2">
               <FcNext />
