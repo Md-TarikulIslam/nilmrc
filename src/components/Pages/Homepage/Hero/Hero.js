@@ -4,10 +4,13 @@ import "./Hero.css";
 import { Typography } from "@material-tailwind/react";
 import Gallery from "../Gallery/Gallery";
 import { ScrollRestoration } from "react-router-dom";
+import Cards from "../Cards/Cards";
 
 const Hero = () => {
   return (
     <div className="hero-size">
+      <Cards></Cards>
+
       <div className="hero-position mt-10 px-5 xl:px-0">
         <Typography
           variant="h5"
@@ -20,11 +23,11 @@ const Hero = () => {
           Prof. (Dr.) Mohammed Shahed Ali Jinnah as a Director Join on 1st
           August, 2022
         </Typography>
-        <img className="hero-img" src={image} alt="" />
-        <Typography variant="h5" className="text-blue-900 my-3">
+        <img className="hero-img rounded-lg shadow-lg shadow-blue-gray-900/50" src={image} alt="" />
+        <Typography variant="h5" className="text-blue-900 mb-3 mt-8">
           Prof. (Dr.) Mohammed Shahed Ali Jinnah
         </Typography>
-        <Typography variant="paragraph" className="text-gray-700 my-3">
+        <Typography variant="paragraph" className="text-gray-700 mt-3 mb-8">
           MBBS; MD (Pathology)
           <br /> Director
           <br /> National Institute of Laboratory Medicine and Referral Centre
@@ -46,8 +49,8 @@ const Hero = () => {
           their lives to achieve victory. Salute to the brave army and people of
           Bangladesh.
         </Typography>
-        <Typography variant="h5" className="text-red-600 mt-8 mb-4">
-          Objective of NILMRC, Bangladesh:
+        <Typography variant="h5" className="text-red-600 mt-8 mb-4 text-2xl">
+          Objective of NILMRC, Bangladesh
         </Typography>
         <ul className="list-disc ml-5 ">
           <li>

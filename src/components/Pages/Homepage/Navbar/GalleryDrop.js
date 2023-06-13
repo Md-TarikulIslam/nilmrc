@@ -7,13 +7,16 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   {
     title: "Photo Gallery",
+    link: "/photo-gallery"
   },
   {
     title: "Video Gallery",
+    link: "/dashboard"
   },
 
 ];
@@ -48,14 +51,14 @@ export default function GalleryDrop() {
         className="w-[4-rem] md:w-[5rem] overflow-visible"
       >
         <ul className="col-span-4 flex w-full flex-col">
-          {menuItems.map(({ title }) => (
-            <a href="#" key={title}>
+          {menuItems.map(({ title, link }) => (
+            <Link to={link} key={title}>
               <MenuItem>
                 <Typography variant="small" color="blue-gray" className="">
                   {title}
                 </Typography>
               </MenuItem>
-            </a>
+            </Link>
           ))}
         </ul>
       </MenuList>
