@@ -104,7 +104,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
+        <a target="_blank"
           href="https://nilmrc-patient.netlify.app/"
           className="flex items-center hover:text-blue-500 transition-colors text-black"
         >

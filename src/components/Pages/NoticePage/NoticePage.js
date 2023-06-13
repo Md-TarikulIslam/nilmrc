@@ -1,4 +1,5 @@
 import { Card, Typography } from "@material-tailwind/react";
+import { ScrollRestoration } from "react-router-dom";
 
 const TABLE_HEAD = [
   "ক্রম",
@@ -127,6 +128,7 @@ export default function NoticePage() {
           )}
         </tbody>
       </table>
+      <ScrollRestoration />
     </Card>
   );
 }
