@@ -1,13 +1,15 @@
-import { Typography } from "@material-tailwind/react";
+import { Card, CardBody, Typography } from "@material-tailwind/react";
 import React, { Fragment } from "react";
 import { Link, ScrollRestoration } from "react-router-dom";
 
 const ContactUsPage = () => {
   return (
     <div className="mt-10 px-5 xl:px-0">
+     <Card>
+      <CardBody>
       <Fragment>
-        <Typography variant="" className="text-2xl font-extrabold mb-3">
-          National Institute of Laboratory Medicine & Referral Centre
+        <Typography variant="" className="text-3xl font-extrabold text-red-600 mb-3 leading-normal">
+          National Institute of Laboratory <br /> Medicine &  Referral Centre
         </Typography>
         <Typography variant="paragraph">
           Sher-E-Bangla Nagar, Agargoan, Dhaka-1207, Bangladesh
@@ -25,6 +27,8 @@ const ContactUsPage = () => {
           <br /> <Link className="text-blue-700" to='/'>Website: www.nilmrc.gov.bd</Link>
         </Typography>
       </Fragment>
+      </CardBody>
+     </Card>
       <ScrollRestoration />
     </div>
   );

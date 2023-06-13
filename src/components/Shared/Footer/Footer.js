@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
           <p className="text-sm mt-5 text-center lg:text-left">
             Site was last updated:{" "}
-            <span className="italic">2023-06-05 15:17:35</span>
+            <span className="italic">2023-06-14 16:17:35</span>
           </p>
         </div>
 

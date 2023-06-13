@@ -21,16 +21,24 @@ const ICTPage = () => {
         Sher-E-Bangla Nagar, Agargaon
         <br /> Dhaka-1207, Bangladesh.
       </p>
-      <a href="tel: 01912-926049" className="font-semibold text-lg mb-5 hover:underline">Phone: 01912-926049</a>
+      <a
+        href="tel: 01912-926049"
+        className="font-semibold text-lg mb-5 hover:underline"
+      >
+        Phone: 01912-926049
+      </a>
       <p className="font-semibold text-lg mb-5">PABX: 509, Room # 508</p>
       <span className="text-red-500 font-semibold">Email: </span>
       <a
         href="mailto: humayun.kabir@nilmrc.gov.bd"
         className="text text-blue-700 mr-2 hover:underline "
       >
-     humayun.kabir@nilmrc.gov.bd,
+        humayun.kabir@nilmrc.gov.bd,
       </a>
-      <a href="mailto:  mhkabirsco@gmail.com" className="text text-blue-700 hover:underline ">
+      <a
+        href="mailto:  mhkabirsco@gmail.com"
+        className="text text-blue-700 hover:underline "
+      >
         mhkabirsco@gmail.com
       </a>
       <ScrollRestoration />

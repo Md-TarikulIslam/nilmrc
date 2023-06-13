@@ -6,7 +6,7 @@ import SideNav from '../../Shared/SideNav/SideNav';
 const ContactUsPageFlex = () => {
     return (
         <div>
-            <div className='flex flex-col xl:flex-row mt-16 justify-center'>
+            <div className='flex flex-col xl:flex-row mt-16 justify-between px-0 md:px-10'>
               <ContactUsPage />
               <SideNav />
             </div>

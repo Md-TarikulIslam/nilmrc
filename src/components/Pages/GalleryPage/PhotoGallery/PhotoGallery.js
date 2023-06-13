@@ -14,6 +14,7 @@ const PhotoGallery = () => {
   });
   return (
     <div className="mt-10">
+      <h1 className="mb-8 font-bold text-red-600 text-3xl">Some Memorable Moments</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {photos.map((photo) => {
           return (
