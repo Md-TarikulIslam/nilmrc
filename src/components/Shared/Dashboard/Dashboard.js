@@ -21,7 +21,7 @@ const Dashboard = () => {
             color="blue"
             className="mb-4 grid h-28 place-items-center"
           >
-            <Typography variant="h3" color="white">
+            <Typography variant="h3" color="white" className="tracking-widest">
               Dashboard
             </Typography>
           </CardHeader>
@@ -30,7 +30,7 @@ const Dashboard = () => {
           <div>
             <img className="h-1/2 w-1/2 mx-auto" src={img} alt="" />
             <div className="bg-green-700 rounded-lg p-2 w-80 mx-auto">
-              <Typography className="flex text-2xl font-bold gap-2 text-yellow-400 justify-center">
+              <Typography className="flex text-2xl font-bold gap-2 tracking-widest text-yellow-400 justify-center">
                 <span className="mt-1 ">
                   <FcIdea />
                 </span>{" "}
@@ -39,7 +39,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div>
-            <Typography className="text-center mt-10 italic text-lg text-red-600">
+            <Typography className="text-center mt-10 italic text-lg text-red-600 tracking-wider">
               Update your website as like as you want from here.
             </Typography>
 
@@ -69,7 +69,7 @@ const Dashboard = () => {
           <Button
             fullWidth
             variant="gradient"
-            className="flex items-center gap-3 justify-center mt-5"
+            className="flex items-center gap-3 justify-center mt-5 tracking-widest text-lg"
           >
             <FaUpload strokeWidth={2} className="h-5 w-5" /> Upload Files
           </Button>
