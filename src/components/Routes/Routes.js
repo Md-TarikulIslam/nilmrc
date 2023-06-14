@@ -9,7 +9,7 @@ import ResearchPageFlex from "../Pages/ResearchPage/ResearchPageFlex";
 import JournalPageFlex from "../Pages/JournalPage/JournalPageFlex";
 import NoticePageFlex from "../Pages/NoticePage/NoticePageFlex";
 import PhotoGalleryFlex from "../Pages/GalleryPage/PhotoGallery/PhotoGalleryFlex";
-import Dashboard from "../Shared/Dashboard/Dashboard";
+import DashboardFlex from "../Shared/Dashboard/DashboardFlex";
 
 const router = createBrowserRouter([
   {
@@ -54,11 +54,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <Dashboard></Dashboard>,
+        element: <DashboardFlex></DashboardFlex>,
       },
     ],
   },
- 
 ]);
 
 export default router;
