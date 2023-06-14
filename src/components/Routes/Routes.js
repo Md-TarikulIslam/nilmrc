@@ -10,6 +10,7 @@ import JournalPageFlex from "../Pages/JournalPage/JournalPageFlex";
 import NoticePageFlex from "../Pages/NoticePage/NoticePageFlex";
 import PhotoGalleryFlex from "../Pages/GalleryPage/PhotoGallery/PhotoGalleryFlex";
 import DashboardFlex from "../Shared/Dashboard/DashboardFlex";
+import VideoGalleryFlex from "../Pages/GalleryPage/VideoGallery/VideoGalleryFlex";
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,11 @@ const router = createBrowserRouter([
         element: <PhotoGalleryFlex></PhotoGalleryFlex>,
       },
       {
-        path: "/dashboard",
+        path: "/video-gallery",
+        element: <VideoGalleryFlex></VideoGalleryFlex>,
+      },
+      {
+        path: "/admin",
         element: <DashboardFlex></DashboardFlex>,
       },
     ],

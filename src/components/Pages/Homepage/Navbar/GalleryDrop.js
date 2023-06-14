@@ -16,7 +16,7 @@ const menuItems = [
   },
   {
     title: "Video Gallery",
-    link: "/dashboard"
+    link: "/video-gallery"
   },
 
 ];
