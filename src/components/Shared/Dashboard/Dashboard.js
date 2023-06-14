@@ -29,8 +29,8 @@ const Dashboard = () => {
         
           <div>
             <img className="h-1/2 w-1/2 mx-auto" src={img} alt="" />
-            <div className="bg-green-600 rounded-lg p-2 w-80 mx-auto">
-              <Typography className="flex text-2xl gap-2 text-white justify-center">
+            <div className="bg-green-700 rounded-lg p-2 w-80 mx-auto">
+              <Typography className="flex text-2xl font-bold gap-2 text-yellow-400 justify-center">
                 <span className="mt-1 ">
                   <FcIdea />
                 </span>{" "}
