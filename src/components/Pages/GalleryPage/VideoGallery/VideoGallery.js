@@ -1,6 +1,7 @@
 import React from "react";
 import "./VideoGallery.css";
 import { Typography } from "@material-tailwind/react";
+import { ScrollRestoration } from "react-router-dom";
 
 const VideoGallery = () => {
   return (
@@ -28,6 +29,7 @@ const VideoGallery = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+      <ScrollRestoration />
     </div>
   );
 };

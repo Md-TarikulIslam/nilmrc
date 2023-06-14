@@ -11,6 +11,7 @@ import img from "../../assets/images/dashboard/a.avif";
 import img2 from "../../assets/images/dashboard/2.png";
 import { FcIdea } from "react-icons/fc";
 import { FaUpload } from "react-icons/fa";
+import { ScrollRestoration } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -75,6 +76,7 @@ const Dashboard = () => {
           </Button>
         </CardBody>
       </Card>
+      <ScrollRestoration />
     </div>
   );
 };
