@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main";
 import HomeFlex from "../Pages/Homepage/HomeFlex";
@@ -8,9 +9,14 @@ import ICTPageFlex from "../Pages/ICTPage/ICTPageFlex";
 import ResearchPageFlex from "../Pages/ResearchPage/ResearchPageFlex";
 import JournalPageFlex from "../Pages/JournalPage/JournalPageFlex";
 import NoticePageFlex from "../Pages/NoticePage/NoticePageFlex";
-import PhotoGalleryFlex from "../Pages/GalleryPage/PhotoGallery/PhotoGalleryFlex";
 import DashboardFlex from "../Shared/Dashboard/DashboardFlex";
-import VideoGalleryFlex from "../Pages/GalleryPage/VideoGallery/VideoGalleryFlex";
+
+const LazyPhotoGallery = React.lazy(() =>
+  import("../Pages/GalleryPage/PhotoGallery/PhotoGalleryFlex")
+);
+const LazyVideoGallery = React.lazy(() =>
+  import("../Pages/GalleryPage/VideoGallery/VideoGalleryFlex")
+);
 
 const router = createBrowserRouter([
   {
@@ -51,11 +57,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/photo-gallery",
-        element: <PhotoGalleryFlex></PhotoGalleryFlex>,
+        element: (
+          <Suspense fallback="loading...">
+            <LazyPhotoGallery></LazyPhotoGallery>
+          </Suspense>
+        ),
       },
       {
         path: "/video-gallery",
-        element: <VideoGalleryFlex></VideoGalleryFlex>,
+        element: (
+          <Suspense fallback="loading...">
+            <LazyVideoGallery></LazyVideoGallery>
+          </Suspense>
+        ),
       },
       {
         path: "/admin",
