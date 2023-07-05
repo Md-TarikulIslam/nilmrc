@@ -4,8 +4,17 @@ import { FcNext } from "react-icons/fc";
 import img1 from "../../../assets/images/card/1.png";
 import img2 from "../../../assets/images/card/2.png";
 import img3 from "../../../assets/images/card/3.png";
+import { useQuery } from "@tanstack/react-query";
 
 const Cards = () => {
+  const { data: notices = [] } = useQuery({
+    queryKey: ["notices"],
+    queryFn: async () => {
+      const res = await fetch("https://nilmrc-server.vercel.app/nilmrc-notice");
+      const data = await res.json();
+      return data;
+    },
+  });
   return (
     <div className="mt-10">
       <Card>
@@ -17,28 +26,21 @@ const Cards = () => {
             <Typography className="text-red-600 text-xl font-bold mb-5">
               Notice Board
             </Typography>
-            <Typography className="hover:underline flex items-center gap-2">
-              <FcNext />
-              সরকারি স্বাস্থ্য ব্যবস্থাপনা -১ঃ ১৮৪(পবিত্র ঈদ-উল-আযহা,২০২৩...
-              )
-            </Typography>
-            <Typography className="hover:underline flex items-center gap-2">
-              <FcNext />
-              প্রশাসন-১ শাখাঃ ১৩৯১(জাতীয় পুষ্টি সপ্তাহ ২০২৩ উদ্‌যাপন উপলক্ষ্যে
-              সভা){" "}
-            </Typography>
-            <Typography className="hover:underline flex items-center gap-2">
-              <FcNext />
-              পার-৪ শাখাঃ ১৫০(সভার নোটিশ)(একই তারিখ ও স্মারকে প্রতিস্থাপিত){" "}
-            </Typography>
-            <Typography className="hover:underline flex items-center gap-2">
-              <FcNext />
-              নমুনা যোগদান পত্র{" "}
-            </Typography>
-            <Typography className="hover:underline flex items-center gap-2">
-              <FcNext />
-              পার-২: ২৯৬ (সিনিয়র স্কেল প্রদান){" "}
-            </Typography>
+            <div>
+              {notices.map((notice) => {
+                return (
+                  <div>
+                    <a target="_blank" href={notice.link}>
+                      {" "}
+                      <Typography className="hover:underline flex items-center gap-2">
+                        <FcNext />
+                        {notice.news}
+                      </Typography>
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </CardBody>
       </Card>
